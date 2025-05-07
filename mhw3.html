@@ -6,6 +6,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mhw1.css">
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.18.0/auth0-spa-js.production.js"></script>
     <script src="mhw2.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
@@ -19,31 +20,60 @@
             <div id="logo">
                 <a></a>
             </div>
-            <a id="link">cosa facciamo</a>
-            <a id="link">perché sceglierci</a>
-            <a id="link">team DL</a>
-            <a id="link">risultati</a>
-            <a id="link">dove siamo</a>
-            <a id="link">acquista</a>
-            <a id="link">notizie</a>
+            <a class="link">cosa facciamo</a>
+            <a class="link">perché sceglierci</a>
+            <a class="link">team DL</a>
+            <a class="link">risultati</a>
+            <a class="link">dove siamo</a>
+            <a class="link">acquista</a>
+            <a class="link">notizie</a>
 
             <a id="menu"></a>
+            <button id="openAlbumModal">Apri Ricerca Album</button>
 
-            <div id="login">
-                <a></a>
-            </div>
+
+            <a class="login" id="formTrigger"></a>
+
         </nav>
     </div>
+
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">Accedi</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="albumModal" class="modal">
+        <div class="modal-content">
+            <span id="closeAlbumModal" class="close">&times;</span>
+            <h2>Seleziona un album</h2>
+            <form id="spotify-form">
+                <input type="text" id="album" placeholder="Cerca album..." required>
+                <button type="submit">Cerca</button>
+            </form>
+            <div id="album-view"></div>
+        </div>
+    </div>
+
 
     <div class="textcenter maxwidth">
         <h1>Grazie ai 10935 clienti che si sono affidati a noi</h1>
     </div>
 
-    <section>
+    <section class="maxwidth">
         <div id="titolo2" class="textcenter maxwidth">
             <h2>diventa la versione migliore di te stesso</h2>
         </div>
-        <div id="details">
+        <div id="details" class="maxwidth">
             <div class="detelement">
                 <img width="800" height="731" src="https://www.dlgym.it/Imm/Pagine/82/PIC_LA_NOSTRA_ESPERIENZA_3.webp">
                 <h3>LA NOSTRA ESPERIENZA</h3>
@@ -81,9 +111,9 @@
             Scopri cosa possiamo fare per te</a>
     </section>
     <section class="textcenter maxwidth">
-        <div id="overlay">
+        <div id="overlay" class="maxwidth">
             <h3>I NOSTRI NUMERI</h3>
-            <div id="sectiondetails">
+            <div id="sectiondetails" class="maxwidth">
                 <div>
                     <h4>20.638</h4>
                     <p>Le <strong>schede di allenamento</strong> e/o i <strong>piani</strong><br>
@@ -157,7 +187,7 @@
             <span></span>
             Acquista ora</a>
     </div>
-    <div class="backgroundgrey textcenter padding-top">
+    <div class="backgroundgrey textcenter padding-top maxwidth">
         <h2>Domande frequenti</h2>
         <div id="faq-content" class="padding-top">
             <div id="faq" class="maxwidth">
@@ -271,7 +301,7 @@
                 alt="Immagine FAQ">
         </div>
     </div>
-    <div>
+    <div class="maxwidth">
         <h2 class="textcenter">Rimani informato</h2>
         <div id="info" class="padding-top">
             <div class="info-item1">
