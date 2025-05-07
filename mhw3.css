@@ -1,12 +1,16 @@
-html, body, #link{
-    font-family:'Poppins', sans-serif;
+html,
+body,
+#link {
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
-body{
+
+body {
     width: auto;
     max-width: 100%;
 }
-#nav_block{
+
+#nav_block {
     top: 0;
     left: 0;
     width: 100%;
@@ -17,7 +21,8 @@ body{
     background-color: black;
     z-index: 1000;
 }
-#link{
+
+.link {
     width: auto;
 }
 
@@ -28,49 +33,57 @@ nav {
     overflow: hidden;
     z-index: 1000;
 }
-section{
+
+section {
     width: auto;
     max-width: 100%;
 }
 
 
-a, #logo  {
+a,
+#logo {
     cursor: pointer;
     color: white;
 
 }
-div{
+
+div {
     display: block;
 }
 
-a:hover{
+a:hover {
     color: lightblue;
 }
-#logo{
+
+#logo {
     background-image: url(https://www.dlgym.it/container/LOGO_DL_SVG.svg);
     background-repeat: no-repeat;
     height: 40px;
     width: 43px;
     margin-right: 10vw;
 }
-#login{
+
+.login {
     background-image: url(https://www.dlgym.it/container/LOGIN_SVG_white.svg);
     background-repeat: no-repeat;
     height: 40px;
     width: 43px;
 }
-#logo:hover{
+
+#logo:hover {
     color: lightblue;
 }
 
 
-h1 , h2 {
-    font-family:'Anton', sans-serif;
-    font-weight:bold;
+h1,
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
-    
+
 }
-h1{
+
+h1 {
     background-color: #41b2d4;
     color: white;
     font-size: 2.5rem;
@@ -80,70 +93,81 @@ h1{
     width: auto;
     max-width: 100%;
 }
-h2{
+
+h2 {
     font-size: 2.5rem;
 }
 
-.textcenter{
+.textcenter {
     text-align: center;
 }
-#titolo2{
+
+#titolo2 {
     display: block;
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 60px;
     font-size: 40px;
-    
+
 }
 
-.maxwidth{
+.maxwidth {
     width: 100%;
-    max-width: 1600px;
+    max-width: 100vw;
     margin: auto;
     position: static;
 }
-#details{
+
+#details {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
 }
-@media (max-width: 650px){
-    #details{
+
+@media (max-width: 650px) {
+    #details {
         flex-direction: column;
         align-items: center;
     }
 }
-h3{
+
+h3 {
     display: block;
     font-weight: 400;
     font-size: 30px;
 }
-p{
+
+p {
     display: block;
 }
-.detelement{
+
+.detelement {
     text-align: center;
     width: auto;
     max-width: 380px;
 }
-.detelement h4{
+
+.detelement h4 {
     font-size: 5rem;
     margin: 0;
     padding: 0;
     margin-top: 300px;
     margin-bottom: 1.5rem;
 }
-.detelement img{
+
+.detelement img {
     width: 100%;
     max-width: 350px;
     height: auto;
 }
-.detelement a{
-    color: rgb(0 , 0, 238);
+
+.detelement a {
+    color: rgb(0, 0, 238);
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,35 +187,38 @@ p{
     font-weight: bold;
     font-size: 16px;
 }
-.button span{
-    background-image:url(https://www.dlgym.it/container/ICONA_BOTTONE_CTA.svg);
+
+.button span {
+    background-image: url(https://www.dlgym.it/container/ICONA_BOTTONE_CTA.svg);
     width: 24px;
     height: 100%;
     margin-right: 5px;
     background-repeat: no-repeat;
-    
+
 }
-.button:hover{
+
+.button:hover {
     background-color: #009100;
 }
 
-#overlay{
+#overlay {
     position: static;
     height: 350px;
     width: 100%;
-    margin:auto;
-    padding-top : 3.5rem;
+    margin: auto;
+    padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 
-    
+
 }
-#overlay h3{
+
+#overlay h3 {
     font-size: 45px;
 }
 
-section #overlay{
+section #overlay {
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin-top: 60px;
     background-position: center;
@@ -203,32 +230,36 @@ section #overlay{
     background-repeat: no-repeat;
 
 }
-#sectiondetails{
+
+#sectiondetails {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
     gap: 10px;
 }
-#sectiondetails h4{
+
+#sectiondetails h4 {
     font-size: 60px;
-    font-weight:bolder;
+    font-weight: bolder;
     margin-bottom: 0px;
-    
+
 }
-section h2{
+
+section h2 {
     font-size: 35px;
     font-weight: 500;
     margin-bottom: 30px;
     margin-top: 40px;
 }
+
 #photodetails {
     display: grid;
-    justify-content:center;
-    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     max-width: 1100px;
-    width: 100%; 
+    width: 100%;
     margin: auto;
     height: 100%;
     padding: 40px;
@@ -238,13 +269,16 @@ section h2{
     width: 100%;
     height: auto;
 }
+
 .button {
     margin-bottom: 100px;
 }
-.backgroundgrey{
+
+.backgroundgrey {
     background-color: #e4e8f1;
 }
-#programma{
+
+#programma {
     display: block;
     left: 0;
     right: 0;
@@ -255,12 +289,13 @@ section h2{
     padding-bottom: 50px;
 
 }
-#programma h2{
+
+#programma h2 {
     font-size: 35px;
     font-weight: 500;
 }
 
-#dettagli_programma{
+#dettagli_programma {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,15 +304,18 @@ section h2{
     margin-bottom: 40px;
     padding: 0;
 }
-#dettagli_programma p{
+
+#dettagli_programma p {
     width: 45%;
     text-align: left;
 }
-#dettagli_programma img{
+
+#dettagli_programma img {
     width: 50%;
     height: auto;
 }
-#app{
+
+#app {
     color: white;
     font-weight: 400;
     display: block;
@@ -288,7 +326,8 @@ section h2{
     margin-top: 0px;
     padding-top: 10px;
 }
-#app img{
+
+#app img {
     max-width: 100%;
     width: auto;
     height: auto;
@@ -297,12 +336,14 @@ section h2{
     text-align: center;
     display: inline-block;
 }
-#app h1{
+
+#app h1 {
     font-size: 80px;
     color: lightblue;
     background-color: rgb(0, 59, 101);
 }
-#getapp{
+
+#getapp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,21 +351,24 @@ section h2{
     gap: 30px;
     margin-bottom: 1.5rem;
 }
-.button_apple_store{
+
+.button_apple_store {
     background-image: url(https://www.dlgym.it/container/appstore3.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 221px;
     height: 66px;
 }
-.button_google_play{
+
+.button_google_play {
     background-image: url(https://www.dlgym.it/container/playstore3.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 221px;
     height: 66px;
 }
-footer{
+
+footer {
     color: white;
     width: auto;
     width: 100%;
@@ -338,7 +382,8 @@ footer{
     padding-bottom: 80px;
     margin-left: 30px;
 }
-#logo_footer{
+
+#logo_footer {
     background-image: url(https://www.dlgym.it/container/LOGO_DL_SVG.svg);
     display: grid;
     background-repeat: no-repeat;
@@ -347,53 +392,65 @@ footer{
     width: 80px;
     margin-right: 10vw;
 }
-footer h4{
+
+footer h4 {
     color: lightblue;
     font-weight: 700;
 }
-#social{
+
+#social {
     display: block;
 
 }
-.immagini_social{
+
+.immagini_social {
     background-size: auto;
     width: 35px;
     height: 35px;
     margin-right: 10px;
     display: inline-block;
 }
-#facebook{
+
+#facebook {
     background-image: url(https://www.dlgym.it/container/ICONA_FACEBOOK.svg);
-    
+
 }
-#instagram{
+
+#instagram {
     background-image: url(https://www.dlgym.it/container/ICONA_INSTAGRAM.svg);
-    
+
 }
-#youtube{
+
+#youtube {
     background-image: url(https://www.dlgym.it/container/ICONA_YOUTUBE.svg);
-    
+
 }
-#linkedin{
+
+#linkedin {
     background-image: url(https://www.dlgym.it/container/ICONA_LINKEDIN.svg);
-   
+
 }
-#tiktok{
+
+#tiktok {
     background-image: url(https://www.dlgym.it/container/ICONA_TIKTOK.svg);
-    
+
 }
-#xtwitter{
+
+#xtwitter {
     background-image: url(https://www.dlgym.it/container/ICONA_X.svg);
-   
+
 }
-#spotify{
+
+#spotify {
     background-image: url(https://www.dlgym.it/container/ICONA_SPOTIFY_2.svg);
-    
+
 }
-#footer_link{
+
+#footer_link {
     display: block;
 }
-#menu{
+
+#menu {
     width: 40px;
     height: 40px;
     background-image: url(https://www.dlgym.it/container/menu_panino.svg);
@@ -403,42 +460,48 @@ footer h4{
     display: none;
 }
 
-@media(max-width: 650px){
-    #link{
+@media(max-width: 650px) {
+    .link {
         display: none;
     }
-    #menu{
+
+    #menu {
         display: block;
     }
 }
-#faq-content{
+
+#faq-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
     gap: 20px;
 }
-.faq-image{
+
+.faq-image {
     width: auto;
     height: auto;
     flex-shrink: 0;
     margin-left: 10px;
     margin-bottom: 20px;
 }
-#faq{
+
+#faq {
     display: inline-block;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
     text-align: left;
 }
-.faq-item{
+
+.faq-item {
     margin-bottom: 1rem;
     border-bottom: 1px solid black;
     overflow: hidden;
     display: block;
 }
-.faq-question{
+
+.faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -450,22 +513,27 @@ footer h4{
     cursor: pointer;
     color: black;
 }
-.faq-answer{
+
+.faq-answer {
     padding: 10px;
     color: black;
     border-top: 1px solid #ccc;
     text-align: left;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.faq-item a:hover{
+
+.faq-item a:hover {
     color: black;
 }
-.padding-top{
+
+.padding-top {
     padding-top: 5rem;
 }
-.plus-symbol{
+
+.plus-symbol {
     font-weight: 200;
     color: black;
     margin-left: auto;
@@ -474,14 +542,17 @@ footer h4{
     font-size: 1.75rem;
     margin-right: 20px;
 }
-.plus-symbol.rotate{
+
+.plus-symbol.rotate {
     transform: rotate(45deg);
 }
-@media(max-width: 650px){
-    .faq-image{
+
+@media(max-width: 650px) {
+    .faq-image {
         display: none;
     }
 }
+
 #info {
     display: flex;
     justify-content: center;
@@ -522,7 +593,7 @@ footer h4{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #003253; 
+    background-color: #003253;
     opacity: 0.8;
     z-index: 1;
 }
@@ -539,6 +610,7 @@ footer h4{
     z-index: 2;
     padding: 10px;
 }
+
 .info-subtitle {
     margin-top: 10px;
     font-size: 0.9rem;
@@ -546,16 +618,125 @@ footer h4{
     color: #62a5c2 !important;
     font-weight: bold;
 }
-@media(max-width: 650px){
+
+@media(max-width: 650px) {
     #info {
         flex-direction: column;
         align-items: center;
     }
+
     .info-item1 {
         width: 80%;
         height: 200px;
     }
+
     .info-title {
         font-size: 1.5rem;
     }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background-color: #41b2d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+form {
+    width: 75%;
+    height: 75%;
+}
+
+#playlist-view {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    margin-top: 20px;
+}
+
+.playlist img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.playlist p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+form {
+    width: 75%;
+    height: 75%;
+}
+
+#album-view {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
 }
