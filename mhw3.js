@@ -3,8 +3,8 @@ let auth0 = null;
 async function configureAuth0() {
     try {
         auth0 = await createAuth0Client({
-            domain: "dev-glyooisocuw35gd0.eu.auth0.com",
-            client_id: "Df81nMG9BUeXJcfAL6Ph5BTJLmttbgqM",
+            domain: "dev-glyooisocuw35gd0.eu.auth0.co",
+            client_id: "XXXXXXXXXXXXXX",
             cacheLocation: 'localstorage',
             useRefreshTokens: true
         });
