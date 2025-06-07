@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <div>
+        <h1>Accedi al tuo account</h1>
+        <img src="https://img.freepik.com/free-psd/contact-icon-illustration-isolated_23-2151903337.jpg?ga=GA1.1.1943729125.1748499220&semt=ais_items_boosted&w=740"
+            alt="Logo" style="width: 150px; height: 150px;">
+    </div>
+    <form action="api/login.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Accedi</button>
+    </form>
+    <p>Non hai un account? <a href="register.html">Registrati qui</a>.</p>
+</body>
+
+</html>
